@@ -1,0 +1,51 @@
+const query = `{
+                    "query": {
+                    "bool": {
+                    "must": [
+                        {
+                        "term": {
+                            "attributes.league": {
+                            "value": "Prophecy"
+                            }
+                        }
+                        },
+                        {
+                        "term": {
+                            "attributes.rarity": {
+                            "value": "Unique"
+                            } 
+                        }
+                        },
+                        {
+                        "term": {
+                            "shop.hasPrice": {
+                            "value": "true"
+                            }
+                        }
+                        }
+                    ]
+                    }
+                },
+                "aggs": {
+                    "uniqueNames": {
+                    "terms": {
+                        "field": "info.fullName",
+                        "size": 1000,
+                        "order" : {
+                        "avgPrice[50.0]" : "desc"
+                        }
+                    },
+                    "aggs": {
+                        "avgPrice": {
+                        "percentiles": {
+                            "field": "shop.chaosEquiv",
+                            "percents": [
+                            50
+                            ]
+                        }
+                        }
+                    }
+                    }
+                }, 
+                size:0
+        }`;
