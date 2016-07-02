@@ -1,0 +1,116 @@
+{
+  "_index": "poe20160607",
+  "_type": "item",
+  "_id": "6782530e125eb00a7220b992d5f31df65a3ca593e4fae829bc9c6ad01f40b40d",
+  "_score": 13.178669,
+  "_source": {
+    "info": {
+      "icon": "http://webcdn.pathofexile.com/image/Art/2DItems/Weapons/OneHandWeapons/Claws/Bloodseeker.png",
+      "fullName": "Hellion's Paw",
+      "typeLine": "Hellion's Paw",
+      "tokenized": {
+        "fullName": "hellion's paw"
+      }
+    },
+    "requirements": {
+      "Dex": 131,
+      "Int": 95
+    },
+    "propertiesPseudo": {
+      "Weapon": {
+        "estimatedQ20": {
+          "Physical DPS": 73,
+          "Total DPS": 73
+        }
+      }
+    },
+    "uuid": "6782530e125eb00a7220b992d5f31df65a3ca593e4fae829bc9c6ad01f40b40d",
+    "modsTotal": {
+      "#% of Physical Attack Damage Leeched as Life": 1.6
+    },
+    "properties": {
+      "Weapon": {
+        "Physical DPS": 65,
+        "Physical Damage": {
+          "min": 29,
+          "avg": 41,
+          "max": 54
+        },
+        "Critical Strike Chance": "6",
+        "Total Damage": {
+          "min": 29,
+          "avg": 41,
+          "max": 54
+        },
+        "Total DPS": 65,
+        "type": {
+          "Claw": true
+        },
+        "Attacks per Second": "1.6"
+      },
+      "Quality": "6"
+    },
+    "shop": {
+      "added": 1465794560000,
+      "chaosEquiv": 0.5,
+      "currency": "Orb of Alchemy",
+      "defaultMessage": "@IsItRainingArrows I would like to buy your Hellion's Paw listed for 1 Orb of Alchemy (League:Prophecy, Stash Tab:\"~b/o 1 alch\" [x4,y10])",
+      "lastCharacterName": "IsItRainingArrows",
+      "hasPrice": true,
+      "verified": "GONE",
+      "updated": 1465951712000,
+      "priceSource": "stashName",
+      "stash": {
+        "inventoryID": "Stash32",
+        "xLocation": "4",
+        "yLocation": "10",
+        "stashID": "3afbea6ea4c421ff071de767eae77b386d6bb3f43a3b332f5be1f36d53e0146e",
+        "stashName": "~b/o 1 alch"
+      },
+      "modified": 1465951712000,
+      "saleType": "b/o",
+      "amount": "1",
+      "shelfLife": 279041,
+      "sellerAccount": "tyl3rdurden",
+      "price": {
+        "Orb of Alchemy": 1
+      }
+    },
+    "sockets": {
+      "totalGreen": 2,
+      "allSocketsSorted": "GG",
+      "allSocketsGGG": "G G",
+      "socketCount": 2,
+      "sortedLinkGroup": {
+        "0": "G",
+        "1": "G"
+      },
+      "allSockets": "G-G",
+      "largestLinkGroup": 1
+    },
+    "mods": {
+      "Claw": {
+        "implicit": {
+          "#% of Physical Attack Damage Leeched as Life": 1.6
+        }
+      }
+    },
+    "attributes": {
+      "equipType": "One Handed Melee Weapon",
+      "weaponType": "Claw",
+      "corrupted": false,
+      "baseItemName": "Hellion's Paw",
+      "lockedToCharacter": false,
+      "identified": false,
+      "ilvl": 79,
+      "baseItemType": "Weapon",
+      "inventoryHeight": 2,
+      "rarity": "Unique",
+      "mirrored": false,
+      "implicitModsCount": 1,
+      "frameType": 3,
+      "league": "Prophecy",
+      "itemType": "Claw",
+      "inventoryWidth": 2
+    }
+  }

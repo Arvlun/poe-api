@@ -12,7 +12,7 @@
         {
           "term": {
             "attributes.rarity": {
-              "value": "unique"
+              "value": "Unique"
             }
           }
         },

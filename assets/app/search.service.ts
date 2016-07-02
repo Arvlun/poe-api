@@ -19,6 +19,8 @@ export class SearchService {
 
     //maybenot have aggregations DNO
     getSearchItemResult(query: string) {
+            console.log("SEARCH QUERY BELOW (FROM SERVICE):");
+            console.log(query);
             const headers = new Headers({'Authorization':' DEVELOPMENT-Indexer', 'Accept': 'application/json', 'Content-Type': 'application/json'});
             return this.http.post('http://api.exiletools.com/index/_search?pretty', query, { headers: headers })
                             .map(response => response.json())

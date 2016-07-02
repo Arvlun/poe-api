@@ -1,4 +1,8 @@
 <h1>Search form</h1>
-<ul>
-    <li *ngFor="let item of mappings">{{item}}</li>
-</ul>
+<div *ngFor="let item of mappings"  style="height: 100px"><img src="{{item._source.info.icon}}" style="max-height:100%;">{{item._source.sockets.allSockets}}
+         phys DPS: {{item._source.properties.Weapon['Physical DPS']}} 
+         EleDPS: {{ !item._source.properties.Weapon['Physical DPS'] ? item._source.properties.Weapon['Total DPS']  : item._source.properties.Weapon['Total DPS']-item._source.properties.Weapon['Physical DPS']}}
+         Whisper: {{item._source.shop.defaultMessage}}
+</div>
+
+{{jsondata}}
