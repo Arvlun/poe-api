@@ -1,3 +1,187 @@
+----------------------RARE------------------------------
+{
+  "_index": "poe20160607",
+  "_type": "item",
+  "_id": "62a4b69e28ea4c6f65a0766cbf47491640a4486ec5fde2fec740111776dd6712",
+  "_score": 3.0618443,
+  "_source": {
+    "info": {
+      "icon": "http://webcdn.pathofexile.com/image/Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow3.png",
+      "fullName": "Bramble Arch Citadel Bow",
+      "name": "Bramble Arch",
+      "typeLine": "Citadel Bow",
+      "tokenized": {
+        "fullName": "bramble arch citadel bow"
+      }
+    },
+    "requirements": {
+      "Level": 58,
+      "Dex": 185
+    },
+    "propertiesPseudo": {
+      "Weapon": {
+        "estimatedQ20": {
+          "Physical DPS": 93,
+          "Total DPS": 319
+        }
+      }
+    },
+    "uuid": "62a4b69e28ea4c6f65a0766cbf47491640a4486ec5fde2fec740111776dd6712",
+    "modsTotal": {
+      "Adds #-# Lightning Damage": {
+        "min": 10,
+        "avg": 72.5,
+        "max": 135
+      },
+      "#% increased Projectile Speed": 32,
+      "Adds #-# Cold Damage": {
+        "min": 33,
+        "avg": 48.5,
+        "max": 64
+      },
+      "#% increased Critical Strike Chance": 35,
+      "Adds #-# Fire Damage": {
+        "min": 41,
+        "avg": 60.5,
+        "max": 80
+      },
+      "+#% to Global Critical Strike Multiplier": 35
+    },
+    "properties": {
+      "Weapon": {
+        "Cold Damage": {
+          "min": 33,
+          "avg": 48,
+          "max": 64
+        },
+        "Critical Strike Chance": "8.1",
+        "Lightning DPS": 90,
+        "Total Damage": {
+          "min": 111,
+          "avg": 249,
+          "max": 387
+        },
+        "Cold DPS": 60,
+        "Elemental DPS": 226,
+        "Attacks per Second": "1.25",
+        "Fire DPS": 75,
+        "Fire Damage": {
+          "min": 41,
+          "avg": 60,
+          "max": 80
+        },
+        "Physical DPS": 83,
+        "Physical Damage": {
+          "min": 27,
+          "avg": 67,
+          "max": 108
+        },
+        "Total DPS": 311,
+        "type": {
+          "Bow": true
+        },
+        "Lightning Damage": {
+          "min": 10,
+          "avg": 72,
+          "max": 135
+        },
+        "Elemental Damage": {
+          "min": 84,
+          "avg": 181,
+          "max": 279
+        }
+      },
+      "Quality": "7"
+    },
+    "shop": {
+      "added": 1465329009000,
+      "chaosEquiv": 1,
+      "currency": "Chaos Orb",
+      "lastCharacterName": "gullmun",
+      "defaultMessage": "@gullmun I would like to buy your Bramble Arch Citadel Bow listed for 1 Chaos Orb (League:Prophecy, Stash Tab:\"~b/o 1 chaos\" [x10,y8])",
+      "hasPrice": true,
+      "verified": "GONE",
+      "priceSource": "stashName",
+      "updated": 1465330802000,
+      "stash": {
+        "inventoryID": "Stash35",
+        "xLocation": "10",
+        "yLocation": "8",
+        "stashID": "612553506ead453f8a11fe98638613be89c036b7e91a39cb6590fe0d3944ba04",
+        "stashName": "~b/o 1 chaos"
+      },
+      "modified": 1465330802000,
+      "saleType": "b/o",
+      "amount": "1",
+      "shelfLife": 1793,
+      "sellerAccount": "nov1ce",
+      "price": {
+        "Chaos Orb": 1
+      }
+    },
+    "sockets": {
+      "totalGreen": 2,
+      "allSocketsSorted": "GG",
+      "allSocketsGGG": "G-G",
+      "socketCount": 2,
+      "sortedLinkGroup": {
+        "0": "GG"
+      },
+      "allSockets": "GG",
+      "largestLinkGroup": 2
+    },
+    "mods": {
+      "Bow": {
+        "explicit": {
+          "Adds #-# Lightning Damage": {
+            "min": 10,
+            "avg": 72.5,
+            "max": 135
+          },
+          "#% increased Projectile Speed": 32,
+          "Adds #-# Cold Damage": {
+            "min": 33,
+            "avg": 48.5,
+            "max": 64
+          },
+          "#% increased Critical Strike Chance": 35,
+          "Adds #-# Fire Damage": {
+            "min": 41,
+            "avg": 60.5,
+            "max": 80
+          },
+          "+#% to Global Critical Strike Multiplier": 35
+        }
+      }
+    },
+    "attributes": {
+      "equipType": "Bow",
+      "weaponType": "Bow",
+      "corrupted": false,
+      "explicitModsCount": 6,
+      "baseItemName": "Citadel Bow",
+      "lockedToCharacter": false,
+      "identified": true,
+      "ilvl": 79,
+      "baseItemType": "Weapon",
+      "inventoryHeight": 4,
+      "rarity": "Rare",
+      "mirrored": false,
+      "frameType": 2,
+      "league": "Prophecy",
+      "itemType": "Bow",
+      "inventoryWidth": 2
+    }
+  }
+}
+
+
+
+
+
+
+
+------------------------------UNID----------------------------
 {
   "_index": "poe20160607",
   "_type": "item",

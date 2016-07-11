@@ -70,7 +70,8 @@ export class SearchComponent implements OnInit {
         this.searchService.getSearchItemResult(query)
                           .subscribe(
                              data => {
-                                 console.log(data);
+                                 this.jsondata = JSON.stringify(data.hits.hits[0], null, 2);
+                                 console.log(data.hits.hits);
                                  this.mappings = data.hits.hits;
                              },
                              error => console.log(error) 
@@ -86,18 +87,20 @@ export class SearchComponent implements OnInit {
     }
 
 
-
-    ngOnInit() {
-        this.querymain.query = this.bool;
+    testQuery() {
         this.querymain.query.bool.must.push(this.createTerm('attributes.league', 'Prophecy'));
-        //this.querymain.query.bool.must.push(this.createTerm('attributes.rarity', 'Unique'));
+        this.querymain.query.bool.must.push(this.createTerm('attributes.rarity', 'Rare'));
         //this.querymain.query.bool.must.push(this.createTerm('info.fullName', "Hellion's Paw"));
         this.querymain.query.bool.must.push(this.createTerm('shop.hasPrice', "true"));
-        this.querymain.query.bool.must.push(this.createRange('properties.Weapon.Elemental DPS', 200, 300));
+        //this.querymain.query.bool.must.push(this.createRange('properties.Weapon.Elemental DPS', 200, 300));
         //this.createRange('properties.Weapon.Elemental', 10, 300);
         console.log(this.querymain);
         const testquery = (JSON.stringify(this.querymain, null, 2));
         this.getSearchItemResult(testquery);
+    }
+
+    ngOnInit() {
+        this.querymain.query = this.bool;
      }
 
 }

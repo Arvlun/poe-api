@@ -1,8 +1,53 @@
 <h1>Search form</h1>
-<div *ngFor="let item of mappings"  style="height: 100px"><img src="{{item._source.info.icon}}" style="max-height:100%;">{{item._source.sockets.allSockets}}
-         phys DPS: {{item._source.properties.Weapon['Physical DPS']}} 
-         EleDPS: {{ !item._source.properties.Weapon['Physical DPS'] ? item._source.properties.Weapon['Total DPS']  : item._source.properties.Weapon['Total DPS']-item._source.properties.Weapon['Physical DPS']}}
-         Whisper: {{item._source.shop.defaultMessage}}
-</div>
-
+<button type="button" (click)="testQuery()">Test</button>
+<!--<div *ngFor="let item of mappings"  style="height: 100px"><img src="{{item._source.info.icon}}" style="max-height:100%;">{{item._source.sockets.allSockets}}
+         <b>name:</b> {{ item._source.info.name }} - {{ item._source.info.typeLine }}
+         <b>phys DPS:</b> {{item._source.properties.Weapon['Physical DPS']}} 
+         <b>EleDPS:</b> {{ !item._source.properties.Weapon['Physical DPS'] ? item._source.properties.Weapon['Total DPS']  : item._source.properties.Weapon['Total DPS']-item._source.properties.Weapon['Physical DPS']}}
+         <b>Whisper:</b>{{item._source.shop.defaultMessage}}
+</div>-->
+<table>
+    <tbody *ngFor="let item of mappings" style="height: 100px;">
+        <tr>
+            <td style="height: 100px;"><div style="height: 100px;"><img src="{{item._source.info.icon}}" style="max-height:100%;"></div></td>
+            <td>
+                <h5> {{ item._source.info.name }} - {{ item._source.info.typeLine }} </h5>
+                <ul>
+                    <li>mod</li>
+                    <li>mod</li>
+                    <li>mod</li>
+                    <li>mod</li>
+                    <li>mod</li>
+                    <li>mod</li>
+                </ul>
+            </td>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th colspand="2">
+                                DPS
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspand="2">
+                                <!-- {{ !item._source.properties['Weapon'] ? item._source.properties.Weapon['Total DPS'] : '' }}-->
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>           
+        </tr>
+        <tr>
+            <td colspan="20">
+                {{item._source.shop.defaultMessage}}
+            </td>
+        </tr>
+        <tr bgcolor="#000000">
+            <td style="height: 15px;" colspan="20">
+            </td>
+        </tr>
+</table>
+<pre>
 {{jsondata}}
+</pre>
